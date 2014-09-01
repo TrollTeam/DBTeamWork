@@ -30,7 +30,7 @@
         private static void InjectMongoDb(TrollStoreData data)
         {
             var mongoDbInjector = new MongoDbInjector(data);
-            mongoDbInjector.AddCountries();
+            mongoDbInjector.PopulateData();
         }
     }
 }

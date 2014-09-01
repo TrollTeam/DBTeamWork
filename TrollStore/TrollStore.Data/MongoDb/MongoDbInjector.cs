@@ -24,9 +24,16 @@
             this.mongoDbCloud = mongoDb;
         }
 
-        public void AddCountries()
+        public void PopulateData()
         {
-            //if (this.mongoDbData.Countries.All().Any())
+            this.AddCountries();
+            this.AddManufacturers();
+            this.AddStores();
+        }
+
+        private void AddCountries()
+        {
+            //if (this.trollStoreData.Countries.All().Any())
             //{
             //    return;
             //}
@@ -37,7 +44,52 @@
             {
                 this.trollStoreData.Countries.Add(new Country()
                 {
+                    CountryId = int.Parse(country["id"].ToString()),
                     Name = country["name"].ToString()
+                });
+            }
+
+            this.SaveChanges();
+        }
+
+        private void AddManufacturers()
+        {
+            //if (this.trollStoreData.Manufacturers.All().Any())
+            //{
+            //    return;
+            //}
+
+            var manufacturers = this.mongoDbCloud.GetItemsFromCollection("manufacturers");
+
+            foreach (var manufacturer in manufacturers)
+            {
+                this.trollStoreData.Manufacturers.Add(new Manufacturer()
+                {
+                    ManufacturerId = int.Parse(manufacturer["id"].ToString()),
+                    Name = manufacturer["name"].ToString(),
+                    CountryId = int.Parse(manufacturer["countryId"].ToString())
+                });
+            }
+
+            this.SaveChanges();
+        }
+
+        private void AddStores()
+        {
+            //if (this.trollStoreData.Manufacturers.All().Any())
+            //{
+            //    return;
+            //}
+
+            var stores = this.mongoDbCloud.GetItemsFromCollection("stores");
+
+            foreach (var store in stores)
+            {
+                this.trollStoreData.Stores.Add(new Store()
+                {
+                    StoreId = int.Parse(store["id"].ToString()),
+                    Name = store["name"].ToString(),
+                    CountryId = int.Parse(store["countryId"].ToString())
                 });
             }
 
