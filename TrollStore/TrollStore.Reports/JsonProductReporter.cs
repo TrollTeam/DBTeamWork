@@ -10,7 +10,7 @@ namespace TrollStore.Reports
 {
     public class JsonProductReporter
     {
-        public void GenerateReport(IEnumerable<Product> products)
+        public void GenerateReport(IEnumerable<ProductReport> products)
         {
             foreach (var product in products)
             {

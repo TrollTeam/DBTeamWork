@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrollStore.Reports
 {
-    public class Product
+    public class ProductReport
     {
         public int ProductId { get; set; }
 
@@ -18,11 +18,11 @@ namespace TrollStore.Reports
 
         public decimal Price { get; set; }
 
-        public Product()
+        public ProductReport()
         {
         }
 
-        public Product(int productId, int typeId, int manufacturerId, string name, decimal price)
+        public ProductReport(int productId, int typeId, int manufacturerId, string name, decimal price)
         {
             this.ProductId = productId;
             this.TypeId = typeId;
