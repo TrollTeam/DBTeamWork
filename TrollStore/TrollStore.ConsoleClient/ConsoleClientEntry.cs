@@ -5,8 +5,8 @@
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
-
     using TrollStore.Data;
+    using TrollStore.Data.MongoDb;
     using TrollStore.Model;
 
     public class ConsoleClientEntry
@@ -14,6 +14,7 @@
         public static void Main()
         {
             var data = new TrollStoreData();
+            InjectMongoDb(data);
 
             data.Countries.Add(new Country
             {
@@ -24,6 +25,12 @@
 
             var newCountry = data.Countries.All().First();
             Console.WriteLine(newCountry.Name);
+        }
+
+        private static void InjectMongoDb(TrollStoreData data)
+        {
+            var mongoDbInjector = new MongoDbInjector(data);
+            mongoDbInjector.AddCountries();
         }
     }
 }
