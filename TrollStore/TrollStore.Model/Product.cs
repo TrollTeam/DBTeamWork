@@ -22,17 +22,12 @@
 
         public decimal PriceDelivered { get; set; }
 
-     //   [ForeignKey("ProductType")]
         public int ProductTypeId { get; set; }
 
         public virtual ProductType ProductType { get; set; }
 
-      //  [ForeignKey("Manufacturer")]
         public int ManufacturerId { get; set; }
 
         public virtual Manufacturer Manufacturer { get; set; }
-
-   ////     [ForeignKey("Store")]
-   //     public virtual ICollection<Store> Stores { get; set; }
     }
 }
