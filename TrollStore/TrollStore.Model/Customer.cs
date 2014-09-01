@@ -10,6 +10,12 @@
 
     public class Customer
     {
+
+        public Customer()
+        {
+            this.Purchases = new HashSet<Sale>();
+        }
+
         [Key]
         public int CustomerId { get; set; }
 
@@ -17,9 +23,10 @@
 
         public string Address { get; set; }
 
-        //[ForeignKey("Country")]
-        public int CountrtyId { get; set; }
+        public int CountryId { get; set; }
 
         public virtual Country Country { get; set; }
+
+        public virtual ICollection<Sale> Purchases { get; set; }
     }
 }

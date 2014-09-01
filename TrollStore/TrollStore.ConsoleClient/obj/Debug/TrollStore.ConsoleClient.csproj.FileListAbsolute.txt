@@ -1,0 +1,14 @@
+C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\bin\Debug\TrollStore.ConsoleClient.exe.config
+C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\bin\Debug\TrollStore.ConsoleClient.exe
+C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\bin\Debug\TrollStore.ConsoleClient.pdb
+C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\bin\Debug\EntityFramework.dll
+C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\bin\Debug\TrollStore.Data.dll
+C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\bin\Debug\TrollStore.Model.dll
+C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\bin\Debug\TrollStore.Data.pdb
+C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\bin\Debug\TrollStore.Model.pdb
+C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\bin\Debug\EntityFramework.xml
+C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\obj\Debug\TrollStore.ConsoleClient.csprojResolveAssemblyReference.cache
+C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\obj\Debug\TrollStore.ConsoleClient.exe
+C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\obj\Debug\TrollStore.ConsoleClient.pdb

@@ -10,37 +10,24 @@
 
     public class Store
     {
-        // ICollection<Product> products;
-
         public Store()
         {
-            //this.products = new HashSet<Product>();
-            //this.Products = new HashSet<Product>();
+            this.Products = new HashSet<Product>();
+            this.Sales = new HashSet<Sale>();
         }
 
-        [Key]
         public int StoreId { get; set; }
 
         public int Quantity { get; set; }
 
         public decimal SalesPrice { get; set; }
 
-        //[ForeignKey("Product")]
-        //public virtual ICollection<Product> Products
-        //{
-        //    get;
-        //    //{
-        //    //    //return this.products;
-        //    //}
-        //    set;
-        //    //{
-        //    //    //this.products = value;
-        //    //}
-        //}
-
-        //[ForeignKey("Country")]
         public int CountryId { get; set; }
 
         public virtual Country Country { get; set; }
+
+        public virtual ICollection<Product> Products { get; set; }
+
+        public virtual ICollection<Sale> Sales { get; set; }
     }
 }

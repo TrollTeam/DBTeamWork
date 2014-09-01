@@ -17,14 +17,9 @@ namespace TrollStore.Model
 
         public DateTime Date { get; set; }
 
-        //[ForeignKey("Customer")]
+     //   [ForeignKey("Customer")]
         public int CustomerId { get; set; }
 
         public virtual Customer Customer { get; set; }
-
-        //[ForeignKey("Store")]
-        public int StoreId { get; set; }
-
-        public virtual Store Store { get; set; }
     }
 }
