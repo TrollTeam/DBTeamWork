@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrollStore.Model", "TrollStore.Model\TrollStore.Model.csproj", "{7AA2C49A-9E9B-49B1-B919-C2FE0FBBA775}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrollStore.ConsoleClient", "TrollStore.ConsoleClient\TrollStore.ConsoleClient.csproj", "{51C42AF0-7434-4B94-B299-0054F3948F3E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrollStore.Reports", "TrollStore.Reports\TrollStore.Reports.csproj", "{528A5A12-FA44-4491-8A8D-3B9E7A9506C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySqlTrollStoreModel", "MySqlTrollStoreModel\MySqlTrollStoreModel.csproj", "{6F9C2621-695C-4BDE-881B-157DCAA75C07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{528A5A12-FA44-4491-8A8D-3B9E7A9506C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{528A5A12-FA44-4491-8A8D-3B9E7A9506C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{528A5A12-FA44-4491-8A8D-3B9E7A9506C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F9C2621-695C-4BDE-881B-157DCAA75C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F9C2621-695C-4BDE-881B-157DCAA75C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F9C2621-695C-4BDE-881B-157DCAA75C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F9C2621-695C-4BDE-881B-157DCAA75C07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

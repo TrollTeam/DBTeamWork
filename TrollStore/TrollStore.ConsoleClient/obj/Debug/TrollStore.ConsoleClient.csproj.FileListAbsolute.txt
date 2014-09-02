@@ -48,3 +48,6 @@ C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClie
 C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\bin\Debug\MongoDB.Bson.xml
 C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\bin\Debug\MongoDB.Driver.xml
 C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\obj\Debug\TrollStore.ConsoleClient.csprojResolveAssemblyReference.cache
+D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.ConsoleClient\bin\Debug\TrollStore.ConsoleClient.exe.config
+D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.ConsoleClient\obj\Debug\TrollStore.ConsoleClient.exe
+D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.ConsoleClient\obj\Debug\TrollStore.ConsoleClient.pdb
