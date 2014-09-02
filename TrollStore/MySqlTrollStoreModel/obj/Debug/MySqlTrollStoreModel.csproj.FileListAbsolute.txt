@@ -1,0 +1,8 @@
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\MySqlTrollStoreModel\bin\Debug\MySqlTrollStoreModel.dll.config
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\MySqlTrollStoreModel\bin\Debug\MySqlTrollStoreModel.dll
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\MySqlTrollStoreModel\bin\Debug\MySqlTrollStoreModel.pdb
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\MySqlTrollStoreModel\bin\Debug\Telerik.OpenAccess.35.Extensions.dll
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\MySqlTrollStoreModel\bin\Debug\Telerik.OpenAccess.35.Extensions.xml
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\MySqlTrollStoreModel\obj\Debug\MySqlTrollStoreModel.csprojResolveAssemblyReference.cache
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\MySqlTrollStoreModel\obj\Debug\MySqlTrollStoreModel.dll
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\MySqlTrollStoreModel\obj\Debug\MySqlTrollStoreModel.pdb

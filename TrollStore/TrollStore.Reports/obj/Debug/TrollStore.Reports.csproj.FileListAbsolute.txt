@@ -53,3 +53,7 @@ D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.
 D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Reports\bin\Debug\Telerik.OpenAccess.35.Extensions.dll
 D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Reports\bin\Debug\MySqlTrollStoreModel.pdb
 D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Reports\bin\Debug\Telerik.OpenAccess.35.Extensions.xml
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Reports\bin\Debug\MySqlTrollStoreModel.dll
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Reports\bin\Debug\Telerik.OpenAccess.35.Extensions.dll
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Reports\bin\Debug\MySqlTrollStoreModel.pdb
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Reports\bin\Debug\Telerik.OpenAccess.35.Extensions.xml

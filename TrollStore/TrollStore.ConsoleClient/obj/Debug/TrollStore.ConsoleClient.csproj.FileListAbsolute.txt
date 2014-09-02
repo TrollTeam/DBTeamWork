@@ -96,3 +96,11 @@ D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.
 D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.ConsoleClient\bin\Debug\MongoDB.Bson.xml
 D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.ConsoleClient\bin\Debug\MongoDB.Driver.xml
 D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.ConsoleClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\bin\Debug\MySqlTrollStoreModel.dll
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\bin\Debug\Telerik.OpenAccess.35.Extensions.dll
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\bin\Debug\TrollStore.Reports.dll
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\bin\Debug\MySqlTrollStoreModel.pdb
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\bin\Debug\TrollStore.Reports.pdb
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\bin\Debug\Telerik.OpenAccess.35.Extensions.xml
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\bin\Debug\Newtonsoft.Json.xml
