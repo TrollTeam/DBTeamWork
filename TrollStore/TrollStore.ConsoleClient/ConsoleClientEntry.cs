@@ -14,13 +14,13 @@
 
     public class ConsoleClientEntry
     {
-        private const string CountriesXmlFilepath = @"\..\..\..\TrollStore.Reports\countries.xml";
+        private const string CountriesXmlFilepath = @"..\..\..\TrollStore.Reports\Raw Data\countries.xml";
 
         public static void Main()
         {
             var data = new TrollStoreData();
 
-            //UploadCountriesToMongoDb();
+            UploadCountriesToMongoDb();
             InjectMongoDb(data);
 
             ////string filePathToZip = "..\\..\\..\\TrollStore.Reports\\Raw Data\\SalesReports.zip";
@@ -52,13 +52,13 @@
 
         }
 
-        //private static void UploadCountriesToMongoDb()
-        //{
-        //    XmlReporter<Country> xmlReporter = new XmlReporter<Country>(string.Empty, CountriesXmlFilepath);
+        private static void UploadCountriesToMongoDb()
+        {
+            XmlReporter<CountryFromXml> xmlReporter = new XmlReporter<CountryFromXml>(string.Empty, CountriesXmlFilepath);
 
-        //    var result = xmlReporter.ReadData();
-        //    Console.WriteLine();
-        //}
+            var result = xmlReporter.ReadData();
+            Console.WriteLine();
+        }
 
         private static void InjectMongoDb(TrollStoreData data)
         {

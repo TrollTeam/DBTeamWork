@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfCountry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Country>
+<ArrayOfCountryFromXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CountryFromXml>
     <CountryId>1</CountryId>
-    <CountryName>Bulgaria</CountryName>
+    <Name>Bulgaria</Name>
     <CountryCode>BGR</CountryCode>
     <Currency>Lev</Currency>
-  </Country>
-  <Country>
+  </CountryFromXml>
+  <CountryFromXml>
     <CountryId>2</CountryId>
-    <CountryName>Albania</CountryName>
+    <Name>Albania</Name>
     <CountryCode>ALB</CountryCode>
     <Currency>Lek</Currency>
-  </Country>
-  <Country>
+  </CountryFromXml>
+  <CountryFromXml>
     <CountryId>3</CountryId>
-    <CountryName>Macedonia</CountryName>
+    <Name>Macedonia</Name>
     <CountryCode>MKD</CountryCode>
     <Currency>Denar</Currency>
-  </Country>
-  <Country>
+  </CountryFromXml>
+  <CountryFromXml>
     <CountryId>4</CountryId>
-    <CountryName>United Kingdom</CountryName>
+    <Name>United Kingdom</Name>
     <CountryCode>GBR</CountryCode>
     <Currency>Pound</Currency>
-  </Country>
-  <Country>
+  </CountryFromXml>
+  <CountryFromXml>
     <CountryId>5</CountryId>
-    <CountryName>Turkey</CountryName>
+    <Name>Turkey</Name>
     <CountryCode>TUR</CountryCode>
     <Currency>Lira</Currency>
-  </Country>
-  <Country>
+  </CountryFromXml>
+  <CountryFromXml>
     <CountryId>6</CountryId>
-    <CountryName>Germany</CountryName>
+    <Name>Germany</Name>
     <CountryCode>DEU</CountryCode>
     <Currency>Euro</Currency>
-  </Country>
-  <Country>
+  </CountryFromXml>
+  <CountryFromXml>
     <CountryId>7</CountryId>
-    <CountryName>Austria</CountryName>
+    <Name>Austria</Name>
     <CountryCode>AUT</CountryCode>
     <Currency>Euro</Currency>
-  </Country>
-  <Country>
+  </CountryFromXml>
+  <CountryFromXml>
     <CountryId>8</CountryId>
-    <CountryName>Norway</CountryName>
+    <Name>Norway</Name>
     <CountryCode>NOR</CountryCode>
     <Currency>Krone</Currency>
-  </Country>
-  <Country>
+  </CountryFromXml>
+  <CountryFromXml>
     <CountryId>9</CountryId>
-    <CountryName>United States</CountryName>
+    <Name>United States</Name>
     <CountryCode>USA</CountryCode>
     <Currency>Dollar</Currency>
-  </Country>
-</ArrayOfCountry>
+  </CountryFromXml>
+</ArrayOfCountryFromXml>

@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Country.cs" />
+    <Compile Include="CountryFromXml.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="Manufacturer.cs" />
     <Compile Include="Product.cs" />

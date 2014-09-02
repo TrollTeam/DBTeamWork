@@ -3,90 +3,14 @@ C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\
 C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Data.pdb
 C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.dll
 C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Bson.dll
+C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Driver.dll
 C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Model.dll
 C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Model.pdb
 C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.xml
 C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Bson.xml
+C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Driver.xml
 C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.csprojResolveAssemblyReference.cache
 C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.dll
 C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.pdb
-D:\Telerik\Databases\Teamwork\TeamworkDB\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Data.dll.config
-D:\Telerik\Databases\Teamwork\TeamworkDB\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Data.dll
-D:\Telerik\Databases\Teamwork\TeamworkDB\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Data.pdb
-D:\Telerik\Databases\Teamwork\TeamworkDB\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.dll
-D:\Telerik\Databases\Teamwork\TeamworkDB\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.SqlServer.dll
-D:\Telerik\Databases\Teamwork\TeamworkDB\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Bson.dll
-D:\Telerik\Databases\Teamwork\TeamworkDB\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Driver.dll
-D:\Telerik\Databases\Teamwork\TeamworkDB\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Model.dll
-D:\Telerik\Databases\Teamwork\TeamworkDB\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Model.pdb
-D:\Telerik\Databases\Teamwork\TeamworkDB\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.xml
-D:\Telerik\Databases\Teamwork\TeamworkDB\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.SqlServer.xml
-D:\Telerik\Databases\Teamwork\TeamworkDB\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Bson.xml
-D:\Telerik\Databases\Teamwork\TeamworkDB\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Driver.xml
-D:\Telerik\Databases\Teamwork\TeamworkDB\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.csprojResolveAssemblyReference.cache
-D:\Telerik\Databases\Teamwork\TeamworkDB\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.dll
-D:\Telerik\Databases\Teamwork\TeamworkDB\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.pdb
-C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Data.dll.config
-C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Data.dll
-C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Data.pdb
-C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.dll
-C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Bson.dll
-C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Driver.dll
-C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Model.dll
-C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Model.pdb
-C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.xml
-C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Bson.xml
-C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Driver.xml
-C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.csprojResolveAssemblyReference.cache
-C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.dll
-C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.pdb
-D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Data.dll.config
-D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Data.dll
-D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Data.pdb
-D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.dll
-D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.SqlServer.dll
-D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Bson.dll
-D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Driver.dll
-D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Model.dll
-D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Model.pdb
-D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.xml
-D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.SqlServer.xml
-D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Bson.xml
-D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Driver.xml
-D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.csprojResolveAssemblyReference.cache
-D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.dll
-D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.pdb
-D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Data.dll.config
-D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Data.dll
-D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Data.pdb
-D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.dll
-D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.SqlServer.dll
-D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Bson.dll
-D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Driver.dll
-D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Model.dll
-D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Model.pdb
-D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.xml
-D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.SqlServer.xml
-D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Bson.xml
-D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Driver.xml
-D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.csprojResolveAssemblyReference.cache
-D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.dll
-D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.pdb
-D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Data.dll.config
-D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Data.dll
-D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Data.pdb
-D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.dll
-D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.SqlServer.dll
-D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Bson.dll
-D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Driver.dll
-D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Model.dll
-D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Model.pdb
-D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.xml
-D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.SqlServer.xml
-D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Bson.xml
-D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Driver.xml
-D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.csprojResolveAssemblyReference.cache
-D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.dll
-D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.pdb
