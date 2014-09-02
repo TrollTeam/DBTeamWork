@@ -19,6 +19,7 @@ using Telerik.OpenAccess.Data.Common;
 using Telerik.OpenAccess.Metadata.Fluent;
 using Telerik.OpenAccess.Metadata.Fluent.Advanced;
 using Telerik.OpenAccess.Metadata.Relational;
+using TrollStore.Reports;
 
 namespace MySqlTrollStoreModel
 {
@@ -30,7 +31,7 @@ namespace MySqlTrollStoreModel
         {
             List<MappingConfiguration> configurations = new List<MappingConfiguration>();
 
-            var productMapping = new MappingConfiguration<MySqlProduct>();
+            var productMapping = new MappingConfiguration<MySqlProductReport>();
             productMapping.MapType(product => new
             {
                 ProductID = product.ProductID,
