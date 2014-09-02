@@ -42,7 +42,7 @@
     <Reference Include="Telerik.OpenAccess.35.Extensions" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FluentModel.cs" />
+    <Compile Include="TrollStoreModel.cs" />
     <Compile Include="MySqlProduct.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TrollStoreModelMetadataSource.cs" />

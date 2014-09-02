@@ -66,3 +66,7 @@ D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Cons
 D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.ConsoleClient\bin\Debug\MongoDB.Bson.xml
 D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.ConsoleClient\bin\Debug\MongoDB.Driver.xml
 D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.ConsoleClient\obj\Debug\TrollStore.ConsoleClient.csprojResolveAssemblyReference.cache
+D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.ConsoleClient\bin\Debug\MySqlTrollStoreModel.dll
+D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.ConsoleClient\bin\Debug\Telerik.OpenAccess.35.Extensions.dll
+D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.ConsoleClient\bin\Debug\MySqlTrollStoreModel.pdb
+D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.ConsoleClient\bin\Debug\Telerik.OpenAccess.35.Extensions.xml

@@ -5,9 +5,11 @@
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using Telerik.OpenAccess;
     using TrollStore.Data;
     using TrollStore.Data.MongoDb;
     using TrollStore.Model;
+    using MySqlTrollStoreModel;
 
     public class ConsoleClientEntry
     {
@@ -32,5 +34,32 @@
             var mongoDbInjector = new MongoDbInjector(data);
             mongoDbInjector.PopulateData();
         }
+
+        private static void UpdateDatabase()
+        {
+            using (var context = new MySqlTrollStoreModel.TrollStoreModel())
+            {
+                var schemaHandler = context.GetSchemaHandler();
+                EnsureDB(schemaHandler);
+            }
+        }
+        private static void EnsureDB(ISchemaHandler schemaHandler)
+        {
+            string script = null;
+            if (schemaHandler.DatabaseExists())
+            {
+                script = schemaHandler.CreateUpdateDDLScript(null);
+            }
+            else
+            {
+                schemaHandler.CreateDatabase();
+                script = schemaHandler.CreateDDLScript();
+            }
+            if (!string.IsNullOrEmpty(script))
+            {
+                schemaHandler.ExecuteDDLScript(script);
+            }
+        }
+
     }
 }
