@@ -1,4 +1,4 @@
-﻿namespace TestReadZIP
+﻿namespace TrollStore.Reporst
 {
     using System;
     using System.Text;

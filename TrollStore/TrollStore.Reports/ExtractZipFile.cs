@@ -1,4 +1,4 @@
-﻿namespace TestReadZIP
+﻿namespace TrollStore.Reports
 {
     using System;
     using System.Collections.Generic;

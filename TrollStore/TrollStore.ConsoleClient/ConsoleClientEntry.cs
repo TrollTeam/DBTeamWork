@@ -29,6 +29,7 @@
             var newCountry = data.Countries.All().First();
             Console.WriteLine(newCountry.Name);
 
+            ExtractZipFile
 
             UpdateDatabase();
             using (var mysqlcontext = new MySqlTrollStoreModel.TrollStoreModel())
