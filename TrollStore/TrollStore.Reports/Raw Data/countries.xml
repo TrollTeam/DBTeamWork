@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCountry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Country>
+    <CountryId>1</CountryId>
+    <CountryName>Bulgaria</CountryName>
+    <CountryCode>BGR</CountryCode>
+    <Currency>Lev</Currency>
+  </Country>
+  <Country>
+    <CountryId>2</CountryId>
+    <CountryName>Albania</CountryName>
+    <CountryCode>ALB</CountryCode>
+    <Currency>Lek</Currency>
+  </Country>
+  <Country>
+    <CountryId>3</CountryId>
+    <CountryName>Macedonia</CountryName>
+    <CountryCode>MKD</CountryCode>
+    <Currency>Denar</Currency>
+  </Country>
+  <Country>
+    <CountryId>4</CountryId>
+    <CountryName>United Kingdom</CountryName>
+    <CountryCode>GBR</CountryCode>
+    <Currency>Pound</Currency>
+  </Country>
+  <Country>
+    <CountryId>5</CountryId>
+    <CountryName>Turkey</CountryName>
+    <CountryCode>TUR</CountryCode>
+    <Currency>Lira</Currency>
+  </Country>
+  <Country>
+    <CountryId>6</CountryId>
+    <CountryName>Germany</CountryName>
+    <CountryCode>DEU</CountryCode>
+    <Currency>Euro</Currency>
+  </Country>
+  <Country>
+    <CountryId>7</CountryId>
+    <CountryName>Austria</CountryName>
+    <CountryCode>AUT</CountryCode>
+    <Currency>Euro</Currency>
+  </Country>
+  <Country>
+    <CountryId>8</CountryId>
+    <CountryName>Norway</CountryName>
+    <CountryCode>NOR</CountryCode>
+    <Currency>Krone</Currency>
+  </Country>
+  <Country>
+    <CountryId>9</CountryId>
+    <CountryName>United States</CountryName>
+    <CountryCode>USA</CountryCode>
+    <Currency>Dollar</Currency>
+  </Country>
+</ArrayOfCountry>

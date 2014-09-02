@@ -43,12 +43,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="TrollStoreModel.cs" />
-    <Compile Include="MySqlProduct.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TrollStoreModelMetadataSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TrollStore.Reports\TrollStore.Reports.csproj">
+      <Project>{528a5a12-fa44-4491-8a8d-3b9e7a9506c6}</Project>
+      <Name>TrollStore.Reports</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Condition="Exists('$(MSBuildExtensionsPath)\OpenAccess.targets')" Project="$(MSBuildExtensionsPath)\OpenAccess.targets" />

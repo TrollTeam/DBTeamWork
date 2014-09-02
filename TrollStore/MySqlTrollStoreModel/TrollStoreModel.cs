@@ -13,11 +13,14 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Data.Common;
 using System.Collections.Generic;
+
 using Telerik.OpenAccess;
 using Telerik.OpenAccess.Metadata;
 using Telerik.OpenAccess.Data.Common;
 using Telerik.OpenAccess.Metadata.Fluent;
 using Telerik.OpenAccess.Metadata.Fluent.Advanced;
+
+using TrollStore.Reports;
 
 namespace MySqlTrollStoreModel	
 {
@@ -50,11 +53,11 @@ namespace MySqlTrollStoreModel
 		{ }
 
 
-        public IQueryable<MySqlProduct> Products
+        public IQueryable<MySqlProductReport> Products
         {
             get
             {
-                return this.GetAll<MySqlProduct>();
+                return this.GetAll<MySqlProductReport>();
             }
         }
 
