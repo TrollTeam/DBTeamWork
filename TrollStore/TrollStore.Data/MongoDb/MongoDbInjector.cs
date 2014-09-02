@@ -35,10 +35,10 @@
 
         private void AddCountries()
         {
-            //if (this.trollStoreData.Countries.All().Any())
-            //{
-            //    return;
-            //}
+            if (this.trollStoreData.Countries.All().Any())
+            {
+                return;
+            }
 
             var countries = this.mongoDbCloud.GetItemsFromCollection("countries");
 
@@ -58,10 +58,10 @@
 
         private void AddManufacturers()
         {
-            //if (this.trollStoreData.Manufacturers.All().Any())
-            //{
-            //    return;
-            //}
+            if (this.trollStoreData.Manufacturers.All().Any())
+            {
+                return;
+            }
 
             var manufacturers = this.mongoDbCloud.GetItemsFromCollection("manufacturers");
 
@@ -76,14 +76,15 @@
             }
 
             this.SaveChanges();
+
         }
 
         private void AddStores()
         {
-            //if (this.trollStoreData.Stores.All().Any())
-            //{
-            //    return;
-            //}
+            if (this.trollStoreData.Stores.All().Any())
+            {
+                return;
+            }
 
             var stores = this.mongoDbCloud.GetItemsFromCollection("stores");
 
@@ -102,10 +103,10 @@
 
         private void AddProductTypes()
         {
-            //if (this.trollStoreData.ProductTypes.All().Any())
-            //{
-            //    return;
-            //}
+            if (this.trollStoreData.ProductTypes.All().Any())
+            {
+                return;
+            }
 
             var productTypes = this.mongoDbCloud.GetItemsFromCollection("producttypes");
 
@@ -123,10 +124,10 @@
 
         private void AddProducts()
         {
-            //if (this.trollStoreData.Products.All().Any())
-            //{
-            //    return;
-            //}
+            if (this.trollStoreData.Products.All().Any())
+            {
+                return;
+            }
 
             var products = this.mongoDbCloud.GetItemsFromCollection("products");
 
@@ -151,6 +152,11 @@
             }
 
             this.SaveChanges();
+        }
+
+        private void AddCollectionToCloud()
+        {
+
         }
 
         private void SaveChanges()

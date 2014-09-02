@@ -14,20 +14,14 @@
 
     public class ConsoleClientEntry
     {
+        private const string CountriesXmlFilepath = @"\..\..\..\TrollStore.Reports\countries.xml";
+
         public static void Main()
         {
             var data = new TrollStoreData();
-            //InjectMongoDb(data);
 
-            //data.Countries.Add(new Country
-            //{
-            //    Name = "Bulgaria",
-            //});
-
-            //data.SaveChanges();
-
-            //var newCountry = data.Countries.All().First();
-            //Console.WriteLine(newCountry.Name);
+            //UploadCountriesToMongoDb();
+            InjectMongoDb(data);
 
             ////string filePathToZip = "..\\..\\..\\TrollStore.Reports\\Raw Data\\SalesReports.zip";
             //string extractFilePath = "..\\..\\..\\..\\ExcelReports";
@@ -38,25 +32,33 @@
             //excelParser.GetDataFromExcel("Sheet1");
 
 
-            UpdateDatabase();
-            using (var mysqlcontext = new MySqlTrollStoreModel.TrollStoreModel())
-            {
-                var reporter = new JsonProductReporter();
-                var fakedata = new List<MySqlProductReport>();
-                fakedata.Add(new MySqlProductReport() { Name = "ivan", Manufacturer = "bai ivan" });
-                reporter.GenerateReport(fakedata);
-                var products = reporter.ReadJsonData();
-                foreach (var p in products)
-                {
-                    mysqlcontext.Add(p);
-                }
+            //UpdateDatabase();
+            //using (var mysqlcontext = new MySqlTrollStoreModel.TrollStoreModel())
+            //{
+            //    var reporter = new JsonProductReporter();
+            //    var fakedata = new List<MySqlProductReport>();
+            //    fakedata.Add(new MySqlProductReport() { Name = "ivan", Manufacturer = "bai ivan" });
+            //    reporter.GenerateReport(fakedata);
+            //    var products = reporter.ReadJsonData();
+            //    foreach (var p in products)
+            //    {
+            //        mysqlcontext.Add(p);
+            //    }
 
-                mysqlcontext.SaveChanges();
-            }
+            //    mysqlcontext.SaveChanges();
+            //}
 
 
 
         }
+
+        //private static void UploadCountriesToMongoDb()
+        //{
+        //    XmlReporter<Country> xmlReporter = new XmlReporter<Country>(string.Empty, CountriesXmlFilepath);
+
+        //    var result = xmlReporter.ReadData();
+        //    Console.WriteLine();
+        //}
 
         private static void InjectMongoDb(TrollStoreData data)
         {

@@ -6,3 +6,11 @@ C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\MySqlTrollStoreModel\b
 C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\MySqlTrollStoreModel\obj\Debug\MySqlTrollStoreModel.csprojResolveAssemblyReference.cache
 C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\MySqlTrollStoreModel\obj\Debug\MySqlTrollStoreModel.dll
 C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\MySqlTrollStoreModel\obj\Debug\MySqlTrollStoreModel.pdb
+D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\MySqlTrollStoreModel\bin\Debug\MySqlTrollStoreModel.dll.config
+D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\MySqlTrollStoreModel\bin\Debug\MySqlTrollStoreModel.dll
+D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\MySqlTrollStoreModel\bin\Debug\MySqlTrollStoreModel.pdb
+D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\MySqlTrollStoreModel\bin\Debug\Telerik.OpenAccess.35.Extensions.dll
+D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\MySqlTrollStoreModel\bin\Debug\Telerik.OpenAccess.35.Extensions.xml
+D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\MySqlTrollStoreModel\obj\Debug\MySqlTrollStoreModel.csprojResolveAssemblyReference.cache
+D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\MySqlTrollStoreModel\obj\Debug\MySqlTrollStoreModel.dll
+D:\Telerik\Databases\Teamwork\DBTeamwork\TrollStore\MySqlTrollStoreModel\obj\Debug\MySqlTrollStoreModel.pdb
