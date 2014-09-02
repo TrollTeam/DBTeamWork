@@ -6,23 +6,23 @@
     using System.Data.OleDb;
     using System.Data.SqlClient;
     using TrollStore.Data;
+    using TrollStore.Model;
 
     public class ExcelSalesParser
     {
         private string connectionString;
         private OleDbConnection dbConn;
-        private double saleId;
-        private double customerId;
-        private double storeId;
-        private double saleValue;
+        private int saleId;
+        private int customerId;
+        private decimal saleValue;
         private DateTime date;
-        private TrollStoreData context;
+        private TrollStoreData data;
 
-        public ExcelSalesParser(string filePath, TrollStoreContext context, OleDbConnection dbConnection, string filePath)
+        public ExcelSalesParser(string filePath, TrollStoreData data)
         {
             this.connectionString = GenerateConnectionString(filePath);
-            this.dbConn = dbConnection(connectionString);
-            this.context = context;
+            this.dbConn = new OleDbConnection(this.connectionString);
+            this.data = data;
         }
 
         public string GenerateConnectionString(string filePath)
@@ -37,33 +37,32 @@
             using (dbConn)
             {
                 OleDbCommand cmd = new OleDbCommand(
-                "select SaleId,CustomerName,CustomerId,StoreName, StoreId,SaleValue,Date from [" + sheetName + "$]", dbConn);
+                "select SaleId,CustomerName,CustomerId,SaleValue,Date from [" + sheetName + "$]", dbConn);
 
                 var reader = cmd.ExecuteReader();
 
                 while (reader.Read())
                 {
-                    this.saleId = (double)reader[0];
-                    this.customerId = (double)reader[2];
-                    this.storeId = (double)reader[4];
-                    this.saleValue = (double)reader[5];
+                    this.saleId =int.Parse(((double)reader[0]).ToString());
+                    this.customerId = int.Parse(((double)reader[2]).ToString());
+                    this.saleValue = (decimal)reader[5];
                     this.date = ParseDate((string)reader[6]);
                 }
             }
         }
 
         public void InsertDataIntoSql()
-        {                   
-            var newSales = new Sales
+        {  
+                 
+            var newSale = new Sale
             {
                 SaleId = this.saleId,
                 CustomerId = this.customerId,
-                StoreId = this.storeId,
                 SaleValue = this.saleValue,
-                DateTime = this.date
+                Date=this.date
             };
-            this.context.Sales.Add(newSales);
-            context.SaveChanges();
+            this.data.Sales.Add(newSale);
+            data.SaveChanges();
         }
 
         private static DateTime ParseDate(string dataAsString)
@@ -79,11 +78,10 @@
         public void ExtractToExcel(string sheetName)
         {         
             OleDbCommand insertIntoExcel = new OleDbCommand(
-                "insert into [" + sheetName + "$] (SaleId, CustomerId, StoreId, SaleValu, Date) values(@saleId, @customerId, @storeId, @saleValue, @date)", dbConn);
+                "insert into [" + sheetName + "$] (SaleId, CustomerId, SaleValu, Date) values(@saleId, @customerId, @saleValue, @date)", dbConn);
 
             insertIntoExcel.Parameters.AddWithValue("@saleId", this.saleId);
             //insertData.Parameters.AddWithValue("@customerId", this.customerId);
-            //insertData.Parameters.AddWithValue("@storeId", this.storeId);
             insertIntoExcel.Parameters.AddWithValue("@saleValue", this.saleValue);
             insertIntoExcel.Parameters.AddWithValue("@date", this.date);
         }

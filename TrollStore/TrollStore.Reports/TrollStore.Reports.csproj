@@ -36,6 +36,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,6 +60,10 @@
     <ProjectReference Include="..\TrollStore.Data\TrollStore.Data.csproj">
       <Project>{51a6b2d0-e416-44ac-a0cb-5ec5a276227e}</Project>
       <Name>TrollStore.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TrollStore.Model\TrollStore.Model.csproj">
+      <Project>{7aa2c49a-9e9b-49b1-b919-c2fe0fbba775}</Project>
+      <Name>TrollStore.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
