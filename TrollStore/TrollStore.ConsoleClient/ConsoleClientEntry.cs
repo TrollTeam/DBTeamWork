@@ -10,6 +10,7 @@
     using TrollStore.Data.MongoDb;
     using TrollStore.Model;
     using MySqlTrollStoreModel;
+    using TrollStore.Reports;
 
     public class ConsoleClientEntry
     {
@@ -27,6 +28,26 @@
 
             var newCountry = data.Countries.All().First();
             Console.WriteLine(newCountry.Name);
+
+
+            UpdateDatabase();
+            using (var mysqlcontext = new MySqlTrollStoreModel.TrollStoreModel())
+            {
+                var reporter = new JsonProductReporter();
+                var fakedata = new List<MySqlProductReport>();
+                fakedata.Add(new MySqlProductReport() { Name = "ivan", Manufacturer = "bai ivan" });
+                reporter.GenerateReport(fakedata);
+                var products = reporter.ReadJsonData();
+                foreach (var p in products)
+                {
+                    mysqlcontext.Add(p);
+                }
+
+                mysqlcontext.SaveChanges();
+            }
+
+
+
         }
 
         private static void InjectMongoDb(TrollStoreData data)

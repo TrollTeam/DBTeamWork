@@ -10,11 +10,15 @@ namespace TrollStore.Reports
 {
     public class JsonProductReporter
     {
+        private const string PATH = "..\\..\\..\\..\\Json-Reports";
+
         public void GenerateReport(IEnumerable<MySqlProductReport> products)
         {
             foreach (var product in products)
             {
-                using (var sw = new StreamWriter("..\\..\\Json-Reports" + product.ProductID + ".json"))
+                Directory.CreateDirectory(PATH);
+
+                using (var sw = new StreamWriter(PATH + "\\" + product.ProductID + ".json"))
                 {
                     sw.WriteLine(JsonConvert.SerializeObject(product, Formatting.Indented));
                 }
@@ -24,15 +28,19 @@ namespace TrollStore.Reports
         public IEnumerable<MySqlProductReport> ReadJsonData()
         {
             List<MySqlProductReport> reports = new List<MySqlProductReport>();
-            string jsonReportsDirectoryPath = "..\\..\\Json-Reports";
 
-            var allReportPaths = Directory.GetFiles(jsonReportsDirectoryPath);
+            if (!Directory.Exists(PATH))
+            {
+                throw new ArgumentException("The directory Json-Reports does not exist. Try to generate reports first.");
+            }
+
+            var allReportPaths = Directory.GetFiles(PATH);
 
             foreach (var filePath in allReportPaths)
             {
-                using (var sr = new StreamReader(filePath))
+                using (var reader = new StreamReader(filePath))
                 {
-                    var report = JsonConvert.DeserializeObject<MySqlProductReport>(sr.ReadToEnd());
+                    var report = JsonConvert.DeserializeObject<MySqlProductReport>(reader.ReadToEnd());
                     reports.Add(report);
                 }
             }
