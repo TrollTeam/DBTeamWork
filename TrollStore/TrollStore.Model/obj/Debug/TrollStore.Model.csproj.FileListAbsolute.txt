@@ -28,3 +28,13 @@ C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Model\bin\D
 C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Model\obj\Debug\TrollStore.Model.csprojResolveAssemblyReference.cache
 C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Model\obj\Debug\TrollStore.Model.dll
 C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Model\obj\Debug\TrollStore.Model.pdb
+D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Model\bin\Debug\TrollStore.Model.dll.config
+D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Model\bin\Debug\TrollStore.Model.dll
+D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Model\bin\Debug\TrollStore.Model.pdb
+D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Model\bin\Debug\EntityFramework.dll
+D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Model\bin\Debug\EntityFramework.xml
+D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Model\obj\Debug\TrollStore.Model.csprojResolveAssemblyReference.cache
+D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Model\obj\Debug\TrollStore.Model.dll
+D:\nakov\HW academy\Databases\00. Teamwork\New folder\TrollStore\TrollStore.Model\obj\Debug\TrollStore.Model.pdb

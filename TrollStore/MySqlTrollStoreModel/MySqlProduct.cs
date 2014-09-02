@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MySqlTrollStoreModel
 {
-    public class MySqlProductModel
+    public class MySqlProduct
     {
-        public int ProductId { get; set; }
+        public int ProductID { get; set; }
 
         public string Name { get; set; }
 

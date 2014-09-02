@@ -25,13 +25,27 @@ namespace MySqlTrollStoreModel
 
 	public partial class TrollStoreModelMetadataSource : FluentMetadataSource
 	{
-		
-		protected override IList<MappingConfiguration> PrepareMapping()
-		{
-			List<MappingConfiguration> mappingConfigurations = new List<MappingConfiguration>();
-			
-			return mappingConfigurations;
-		}
+
+        protected override IList<MappingConfiguration> PrepareMapping()
+        {
+            List<MappingConfiguration> configurations = new List<MappingConfiguration>();
+
+            var productMapping = new MappingConfiguration<MySqlProduct>();
+            productMapping.MapType(product => new
+            {
+                ProductID = product.ProductID,
+                Name = product.Name,
+                Manufacturer = product.Manufacturer,
+                Quantity = product.Quantity,
+                Store = product.Store,
+
+            }).ToTable("ProductReports");
+
+            productMapping.HasProperty(p => p.ProductID).IsIdentity();
+            configurations.Add(productMapping);
+
+            return configurations;
+        }
 		
 		protected override void SetContainerSettings(MetadataContainer container)
 		{

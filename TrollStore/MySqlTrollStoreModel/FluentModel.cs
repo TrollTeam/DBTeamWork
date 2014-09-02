@@ -23,7 +23,7 @@ namespace MySqlTrollStoreModel
 {
 	public partial class TrollStoreModel : OpenAccessContext, ITrollStoreModelUnitOfWork
 	{
-        private static string connectionStringName = @"trollStoreConnection";
+        private static string connectionStringName = @"mysqlTrollStoreConnection";
 			
 		private static BackendConfiguration backend = GetBackendConfiguration();
 				
@@ -50,15 +50,14 @@ namespace MySqlTrollStoreModel
 		{ }
 
 
-        public IQueryable<MySqlProductModel> Stefan
+        public IQueryable<MySqlProduct> Products
         {
             get
             {
-                return this.GetAll<MySqlProductModel>();
+                return this.GetAll<MySqlProduct>();
             }
         }
 
-			
 		public static BackendConfiguration GetBackendConfiguration()
 		{
 			BackendConfiguration backend = new BackendConfiguration();
