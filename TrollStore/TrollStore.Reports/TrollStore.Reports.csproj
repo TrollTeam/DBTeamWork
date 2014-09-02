@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomerPurchaseReport.cs" />
+    <Compile Include="ExcelSalesParser.cs" />
+    <Compile Include="ExtractZipFile.cs" />
     <Compile Include="JsonProductReporter.cs" />
     <Compile Include="ProductReport.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -51,6 +53,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TrollStore.Data\TrollStore.Data.csproj">
+      <Project>{51a6b2d0-e416-44ac-a0cb-5ec5a276227e}</Project>
+      <Name>TrollStore.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

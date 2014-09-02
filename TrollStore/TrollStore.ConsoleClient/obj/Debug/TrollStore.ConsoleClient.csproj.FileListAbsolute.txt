@@ -12,3 +12,6 @@ C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\b
 C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\obj\Debug\TrollStore.ConsoleClient.csprojResolveAssemblyReference.cache
 C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\obj\Debug\TrollStore.ConsoleClient.exe
 C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\obj\Debug\TrollStore.ConsoleClient.pdb
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\bin\Debug\TrollStore.ConsoleClient.exe.config
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\obj\Debug\TrollStore.ConsoleClient.exe
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.ConsoleClient\obj\Debug\TrollStore.ConsoleClient.pdb
