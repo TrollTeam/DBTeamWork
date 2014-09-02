@@ -11,6 +11,7 @@
     using TrollStore.Model;
     using MySqlTrollStoreModel;
     using TrollStore.Reports;
+    using SqLite.Data;
 
     public class ConsoleClientEntry
     {
@@ -18,9 +19,30 @@
 
         public static void Main()
         {
-            var data = new TrollStoreData();
+            //var data = new TrollStoreData();
 
-            UploadCountriesDataToCloud(data);
+            //SqliteContext ctx = new SqliteContext();
+
+            //var entry = new SqliteProduct()
+            //{
+            //    ProductID = 131,
+            //    SoldPieces = 205,
+            //    StartDate = DateTime.Now,
+            //    EndDate = DateTime.Now
+            
+            //};
+
+            //ctx.Products.Add(entry);
+            //ctx.SaveChanges();
+
+
+            //Console.WriteLine(ctx.Products.FirstOrDefault().SoldPieces);
+
+
+
+
+
+            //UploadCountriesDataToCloud(data);
             //DownloadDataFromCloud(data);
 
             ////string filePathToZip = "..\\..\\..\\TrollStore.Reports\\Raw Data\\SalesReports.zip";

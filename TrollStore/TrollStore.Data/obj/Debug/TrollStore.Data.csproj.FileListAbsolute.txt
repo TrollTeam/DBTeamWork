@@ -14,3 +14,19 @@ C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\bin\Debug\
 C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.csprojResolveAssemblyReference.cache
 C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.dll
 C:\Users\hiksa\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.pdb
+D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Data.dll.config
+D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Data.dll
+D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Data.pdb
+D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.dll
+D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Bson.dll
+D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Driver.dll
+D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Model.dll
+D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\TrollStore.Model.pdb
+D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.xml
+D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Bson.xml
+D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\bin\Debug\MongoDB.Driver.xml
+D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.csprojResolveAssemblyReference.cache
+D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.dll
+D:\nakov\HW academy\Databases\00. Teamwork\New folder (2)\TrollStore\TrollStore.Data\obj\Debug\TrollStore.Data.pdb

@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrollStore.Reports", "Troll
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySqlTrollStoreModel", "MySqlTrollStoreModel\MySqlTrollStoreModel.csproj", "{6F9C2621-695C-4BDE-881B-157DCAA75C07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLite", "SQLite\SQLite.csproj", "{CD3B9379-8303-42B5-AFB8-DBA429B746F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqLite.Data", "SqLite.Data\SqLite.Data.csproj", "{BB091170-0DEE-4ACE-94FB-2DEF5BB2BDE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{6F9C2621-695C-4BDE-881B-157DCAA75C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F9C2621-695C-4BDE-881B-157DCAA75C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F9C2621-695C-4BDE-881B-157DCAA75C07}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CD3B9379-8303-42B5-AFB8-DBA429B746F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CD3B9379-8303-42B5-AFB8-DBA429B746F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CD3B9379-8303-42B5-AFB8-DBA429B746F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CD3B9379-8303-42B5-AFB8-DBA429B746F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB091170-0DEE-4ACE-94FB-2DEF5BB2BDE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB091170-0DEE-4ACE-94FB-2DEF5BB2BDE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB091170-0DEE-4ACE-94FB-2DEF5BB2BDE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB091170-0DEE-4ACE-94FB-2DEF5BB2BDE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

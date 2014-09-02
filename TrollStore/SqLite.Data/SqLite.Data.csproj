@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{51C42AF0-7434-4B94-B299-0054F3948F3E}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{BB091170-0DEE-4ACE-94FB-2DEF5BB2BDE2}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TrollStore.ConsoleClient</RootNamespace>
-    <AssemblyName>TrollStore.ConsoleClient</AssemblyName>
+    <RootNamespace>SqLite.Data</RootNamespace>
+    <AssemblyName>SqLite.Data</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -46,38 +44,24 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Telerik.OpenAccess, Version=2014.2.711.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL" />
-    <Reference Include="Telerik.OpenAccess.35.Extensions, Version=2014.2.711.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsoleClientEntry.cs" />
+    <Compile Include="SqliteContext.cs" />
+    <Compile Include="SqliteProduct.cs" />
+    <Compile Include="dataSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>dataSettings.settings</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="app.config" />
+    <None Include="dataSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>dataSettings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MySqlTrollStoreModel\MySqlTrollStoreModel.csproj">
-      <Project>{6f9c2621-695c-4bde-881b-157dcaa75c07}</Project>
-      <Name>MySqlTrollStoreModel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SqLite.Data\SqLite.Data.csproj">
-      <Project>{bb091170-0dee-4ace-94fb-2def5bb2bde2}</Project>
-      <Name>SqLite.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TrollStore.Data\TrollStore.Data.csproj">
-      <Project>{51a6b2d0-e416-44ac-a0cb-5ec5a276227e}</Project>
-      <Name>TrollStore.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TrollStore.Model\TrollStore.Model.csproj">
-      <Project>{7aa2c49a-9e9b-49b1-b919-c2fe0fbba775}</Project>
-      <Name>TrollStore.Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TrollStore.Reports\TrollStore.Reports.csproj">
-      <Project>{528a5a12-fa44-4491-8a8d-3b9e7a9506c6}</Project>
-      <Name>TrollStore.Reports</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

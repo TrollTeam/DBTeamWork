@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SqLite.Data" GeneratedClassName="dataSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SQLITE_URI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=.\SQLiteDatabase\ProductsDatabase.sqlite; Version=3;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
