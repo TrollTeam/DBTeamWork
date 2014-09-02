@@ -23,7 +23,7 @@ namespace MySqlTrollStoreModel
 {
 	public partial class TrollStoreModel : OpenAccessContext, ITrollStoreModelUnitOfWork
 	{
-        private static string connectionStringName = @"trollStoreConnection";
+        private static string connectionStringName = @"mySqlConnection";
 			
 		private static BackendConfiguration backend = GetBackendConfiguration();
 				
