@@ -19,17 +19,24 @@
             var data = new TrollStoreData();
             //InjectMongoDb(data);
 
-            data.Countries.Add(new Country
-            {
-                Name = "Bulgaria",
-            });
+            //data.Countries.Add(new Country
+            //{
+            //    Name = "Bulgaria",
+            //});
 
-            data.SaveChanges();
+            //data.SaveChanges();
 
-            var newCountry = data.Countries.All().First();
-            Console.WriteLine(newCountry.Name);
+            //var newCountry = data.Countries.All().First();
+            //Console.WriteLine(newCountry.Name);
 
-            ExtractZipFile
+            ////string filePathToZip = "..\\..\\..\\TrollStore.Reports\\Raw Data\\SalesReports.zip";
+            //string extractFilePath = "..\\..\\..\\..\\ExcelReports";
+            ////ExtractZipFile extractor = new ExtractZipFile(filePathToZip, extractFilePath);
+            ////extractor.ExtractFromZIP();
+
+            //ExcelSalesParser excelParser = new ExcelSalesParser((extractFilePath + "\\09-02-2014\\Sales.xlsx"), data);
+            //excelParser.GetDataFromExcel("Sheet1");
+
 
             UpdateDatabase();
             using (var mysqlcontext = new MySqlTrollStoreModel.TrollStoreModel())

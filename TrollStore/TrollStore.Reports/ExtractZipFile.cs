@@ -18,9 +18,9 @@
             this.extractPath = extractPath;
         }
 
-        public void ExtractFromZIP(string zipPath, string extractPath)
+        public void ExtractFromZIP()
         {
-            ZipFile.ExtractToDirectory(zipPath, extractPath);
+            ZipFile.ExtractToDirectory(this.zipPath, this.extractPath);
         }
     }
 }

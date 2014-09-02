@@ -1,4 +1,4 @@
-﻿namespace TrollStore.Reporst
+﻿namespace TrollStore.Reports
 {
     using System;
     using System.Text;
@@ -27,47 +27,48 @@
 
         public string GenerateConnectionString(string filePath)
         {
-            return "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=.\\..\\..\\ExcelReportsForInput\\" + filePath + "; Extended Properties=\"Excel 12.0 Xml;HDR=YES\";";
-        }
-
-        public void GetDataFromExcel(string sheetName)
-        {
-
-            this.dbConn.Open();
-            using (dbConn)
-            {
-                OleDbCommand cmd = new OleDbCommand(
-                "select SaleId,CustomerName,CustomerId,SaleValue,Date from [" + sheetName + "$]", dbConn);
-
-                var reader = cmd.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    this.saleId =int.Parse(((double)reader[0]).ToString());
-                    this.customerId = int.Parse(((double)reader[2]).ToString());
-                    this.saleValue = (decimal)reader[5];
-                    this.date = ParseDate((string)reader[6]);
-                }
-            }
+            return "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=.\\" + filePath + "; Extended Properties=\"Excel 12.0 Xml;HDR=YES\";";
         }
 
         public void InsertDataIntoSql()
-        {  
-                 
+        {
             var newSale = new Sale
             {
                 SaleId = this.saleId,
                 CustomerId = this.customerId,
                 SaleValue = this.saleValue,
-                Date=this.date
+                Date = this.date
             };
+
             this.data.Sales.Add(newSale);
             data.SaveChanges();
         }
 
-        private static DateTime ParseDate(string dataAsString)
+        public void GetDataFromExcel(string sheetName)
         {
-            string[] dateParts = dataAsString.Split('-');
+            this.dbConn.Open();
+            using (dbConn)
+            {
+
+                OleDbCommand cmd = new OleDbCommand(
+                "select SaleId,SaleValue,Date,CustomerId from [" + sheetName + "$]", dbConn);
+
+                var reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    this.saleId = int.Parse(((double)reader[0]).ToString());
+                    this.saleValue = decimal.Parse(reader[1].ToString());
+                    this.date = ParseDate((string)reader[2]);
+                    this.customerId = int.Parse(((double)reader[3]).ToString());
+                    InsertDataIntoSql();
+                }
+            }
+        }
+
+        private DateTime ParseDate(string dataAsString)
+        {
+            string[] dateParts = dataAsString.Split('.');
             int day = int.Parse(dateParts[0]);
             int month = int.Parse(dateParts[1]);
             int year = int.Parse(dateParts[2]);
@@ -76,12 +77,12 @@
         }
 
         public void ExtractToExcel(string sheetName)
-        {         
+        {
             OleDbCommand insertIntoExcel = new OleDbCommand(
-                "insert into [" + sheetName + "$] (SaleId, CustomerId, SaleValu, Date) values(@saleId, @customerId, @saleValue, @date)", dbConn);
+                "insert into [" + sheetName + "$] (SaleId, CustomerId, SaleValue, Date) values(@saleId, @customerId, @saleValue, @date)", dbConn);
 
             insertIntoExcel.Parameters.AddWithValue("@saleId", this.saleId);
-            //insertData.Parameters.AddWithValue("@customerId", this.customerId);
+            insertIntoExcel.Parameters.AddWithValue("@customerId", this.customerId);
             insertIntoExcel.Parameters.AddWithValue("@saleValue", this.saleValue);
             insertIntoExcel.Parameters.AddWithValue("@date", this.date);
         }
