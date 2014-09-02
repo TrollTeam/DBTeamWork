@@ -20,8 +20,8 @@
         {
             var data = new TrollStoreData();
 
-            UploadCountriesToMongoDb();
-            InjectMongoDb(data);
+            UploadCountriesDataToCloud(data);
+            //DownloadDataFromCloud(data);
 
             ////string filePathToZip = "..\\..\\..\\TrollStore.Reports\\Raw Data\\SalesReports.zip";
             //string extractFilePath = "..\\..\\..\\..\\ExcelReports";
@@ -52,18 +52,19 @@
 
         }
 
-        private static void UploadCountriesToMongoDb()
+        private static void UploadCountriesDataToCloud(TrollStoreData data)
         {
+            var mongoDbUploader = new MongoDbCloudConnector(data);
             XmlReporter<CountryFromXml> xmlReporter = new XmlReporter<CountryFromXml>(string.Empty, CountriesXmlFilepath);
+            var xmlCountries = xmlReporter.ReadData().ToList();
 
-            var result = xmlReporter.ReadData();
-            Console.WriteLine();
+            mongoDbUploader.UploadToCloud(xmlCountries);
         }
 
-        private static void InjectMongoDb(TrollStoreData data)
+        private static void DownloadDataFromCloud(TrollStoreData data)
         {
-            var mongoDbInjector = new MongoDbInjector(data);
-            mongoDbInjector.PopulateData();
+            var mongoDbDownloader = new MongoDbCloudConnector(data);
+            mongoDbDownloader.PopulateData();
         }
 
         private static void UpdateDatabase()

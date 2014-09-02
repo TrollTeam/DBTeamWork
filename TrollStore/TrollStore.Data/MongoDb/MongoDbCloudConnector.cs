@@ -6,22 +6,38 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    using MongoDB.Bson;
+    using MongoDB.Bson.Serialization.Attributes;
+    using MongoDB.Driver;
+    using MongoDB.Driver.Builders;
+
     using TrollStore.Model;
 
-    public class MongoDbInjector
+    public class MongoDbCloudConnector
     {
         private readonly MongoDbCloud mongoDbCloud;
         private readonly TrollStoreData trollStoreData;
 
-        public MongoDbInjector(TrollStoreData mongoDbData)
+        public MongoDbCloudConnector(TrollStoreData mongoDbData)
             : this(mongoDbData, new MongoDbCloud())
         {
         }
 
-        public MongoDbInjector(TrollStoreData mongoDbData, MongoDbCloud mongoDb)
+        public MongoDbCloudConnector(TrollStoreData mongoDbData, MongoDbCloud mongoDb)
         {
             this.trollStoreData = mongoDbData;
             this.mongoDbCloud = mongoDb;
+        }
+
+        public void UploadToCloud(ICollection<CountryFromXml> countries)
+        {
+            string collectionName = "countriesTemp";
+
+            foreach (var country in countries)
+            {
+                var countryBson = country.ToBsonDocument();
+                this.mongoDbCloud.UploadToCollection(collectionName, countryBson);
+            }
         }
 
         public void PopulateData()

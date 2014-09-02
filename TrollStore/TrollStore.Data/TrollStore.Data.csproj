@@ -57,7 +57,7 @@
     <Compile Include="Contracts\ITrollStoreData.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MongoDb\MongoDbCloud.cs" />
-    <Compile Include="MongoDb\MongoDbInjector.cs" />
+    <Compile Include="MongoDb\MongoDbCloudConnector.cs" />
     <Compile Include="TrollStoreData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />

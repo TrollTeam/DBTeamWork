@@ -8,6 +8,7 @@
 
     using MongoDB.Bson;
     using MongoDB.Driver;
+    using TrollStore.Model;
 
     public class MongoDbCloud
     {
@@ -27,6 +28,16 @@
         {
             this.connectionString = connectionString;
             this.databaseName = DATABASE_NAME;
+        }
+
+        public void UploadToCollection(string collectionName, BsonDocument country)
+        {
+            var database = this.GetDatabase(this.databaseName);
+            var collection = database.GetCollection<Country>(collectionName);
+
+            collection.Insert(country);
+
+            Console.WriteLine();
         }
 
         public IEnumerable<BsonDocument> GetItemsFromCollection(string collectionName)
