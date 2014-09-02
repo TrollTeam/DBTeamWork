@@ -14,7 +14,7 @@
         public static void Main()
         {
             var data = new TrollStoreData();
-            InjectMongoDb(data);
+            //InjectMongoDb(data);
 
             data.Countries.Add(new Country
             {

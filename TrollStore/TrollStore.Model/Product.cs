@@ -22,6 +22,10 @@
 
         public decimal PriceDelivered { get; set; }
 
+        public decimal PriceSold { get; set; }
+
+        public int Quantity { get; set; }
+
         public int ProductTypeId { get; set; }
 
         public virtual ProductType ProductType { get; set; }
