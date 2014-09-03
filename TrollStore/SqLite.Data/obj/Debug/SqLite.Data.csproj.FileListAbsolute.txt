@@ -1,0 +1,12 @@
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\SqLite.Data\obj\Debug\SqLite.Data.csprojResolveAssemblyReference.cache
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\SqLite.Data\bin\Debug\SqLite.Data.dll.config
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\SqLite.Data\bin\Debug\SqLite.Data.dll
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\SqLite.Data\bin\Debug\SqLite.Data.pdb
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\SqLite.Data\bin\Debug\EntityFramework.dll
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\SqLite.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\SqLite.Data\bin\Debug\EPPlus.dll
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\SqLite.Data\bin\Debug\EntityFramework.xml
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\SqLite.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\SqLite.Data\bin\Debug\EPPlus.xml
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\SqLite.Data\obj\Debug\SqLite.Data.dll
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\SqLite.Data\obj\Debug\SqLite.Data.pdb

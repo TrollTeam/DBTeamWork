@@ -24,13 +24,18 @@
         {
             var data = new TrollStoreData();
 
-            var xmlCountries = ReadCountriesDataFromXml();
-            UploadCountriesDataToCloud(xmlCountries, data);
+            //var xmlCountries = ReadCountriesDataFromXml();
+            //UploadCountriesDataToCloud(xmlCountries, data);
 
-            DownloadDataFromCloud(data);
+            //DownloadDataFromCloud(data);
 
-            ExtractDataFromZip();
-            UploadDataFromExcelToSql(data);
+            //ExtractDataFromZip();
+            //UploadDataFromExcelToSql(data);
+
+            SqliteContext context = new SqliteContext();
+            ExtractExcelFromSQLite extractor = new ExtractExcelFromSQLite(context);
+            extractor.ExctractToExcel(@"C:\Users\aniad_000\Documents\GitHub\DBTeamWork\ExcelFromSQLite\Products.xlsx");
+            
 
             //SqliteContext ctx = new SqliteContext();
 
