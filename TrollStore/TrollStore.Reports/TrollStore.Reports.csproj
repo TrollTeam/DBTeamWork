@@ -56,7 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="Raw Data\SalesReports.zip" />
+    <None Include="RawData\SalesReports.zip" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MySqlTrollStoreModel\MySqlTrollStoreModel.csproj">
@@ -73,7 +73,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Raw Data\countries.xml" />
+    <Content Include="RawData\countries.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

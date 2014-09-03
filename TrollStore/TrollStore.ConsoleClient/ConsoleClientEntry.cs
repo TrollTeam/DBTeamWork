@@ -19,7 +19,7 @@
 
         public static void Main()
         {
-            //var data = new TrollStoreData();
+            var data = new TrollStoreData();
 
             //SqliteContext ctx = new SqliteContext();
 
@@ -42,8 +42,8 @@
 
 
 
-            //UploadCountriesDataToCloud(data);
-            //DownloadDataFromCloud(data);
+            UploadCountriesDataToCloud(data);
+            DownloadDataFromCloud(data);
 
             ////string filePathToZip = "..\\..\\..\\TrollStore.Reports\\Raw Data\\SalesReports.zip";
             //string extractFilePath = "..\\..\\..\\..\\ExcelReports";

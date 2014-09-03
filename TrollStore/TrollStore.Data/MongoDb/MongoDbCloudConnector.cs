@@ -31,7 +31,7 @@
 
         public void UploadToCloud(ICollection<CountryFromXml> countries)
         {
-            string collectionName = "countriesTemp";
+            string collectionName = "countries";
 
             foreach (var country in countries)
             {
