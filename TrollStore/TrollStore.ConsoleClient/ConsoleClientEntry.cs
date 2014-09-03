@@ -22,16 +22,17 @@
 
         public static void Main()
         {
-            PdfParser.GeneratePdf();
-            //var data = new TrollStoreData();
+            var data = new TrollStoreData();
 
-            //var xmlCountries = ReadCountriesDataFromXml();
-            //UploadCountriesDataToCloud(xmlCountries, data);
+            var xmlCountries = ReadCountriesDataFromXml();
+            UploadCountriesDataToCloud(xmlCountries, data);
 
-            //DownloadDataFromCloud(data);
+            DownloadDataFromCloud(data);
 
-            //ExtractDataFromZip();
-            //UploadDataFromExcelToSql(data);
+            ExtractDataFromZip();
+            UploadDataFromExcelToSql(data);
+
+            //PdfParser.GeneratePdf();
 
             //SqliteContext context = new SqliteContext();
             //ExtractExcelFromSQLite extractor = new ExtractExcelFromSQLite(context);
@@ -87,9 +88,6 @@
 
             //    mysqlcontext.SaveChanges();
             //}
-
-
-
         }
 
         private static ICollection<CountryFromXml> ReadCountriesDataFromXml()

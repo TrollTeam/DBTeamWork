@@ -85,10 +85,10 @@
 
         private void InsertCustomersDataIntoSql()
         {
-            if (this.data.Customers.All().Any())
-            {
-                return;
-            }
+            //if (this.data.Customers.All().Any())
+            //{
+            //    return;
+            //}
 
             var newCustomer = new Customer()
             {
@@ -105,10 +105,10 @@
 
         private void InsertSalesDataIntoSql()
         {
-            if (this.data.Sales.All().Any())
-            {
-                return;
-            }
+            //if (this.data.Sales.All().Any())
+            //{
+            //    return;
+            //}
 
             var newSale = new Sale()
             {

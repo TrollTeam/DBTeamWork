@@ -36,8 +36,6 @@
             var collection = database.GetCollection<Country>(collectionName);
 
             collection.Insert(country);
-
-            Console.WriteLine();
         }
 
         public IEnumerable<BsonDocument> GetItemsFromCollection(string collectionName)

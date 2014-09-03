@@ -170,11 +170,6 @@
             this.SaveChanges();
         }
 
-        private void AddCollectionToCloud()
-        {
-
-        }
-
         private void SaveChanges()
         {
             this.trollStoreData.SaveChanges();
