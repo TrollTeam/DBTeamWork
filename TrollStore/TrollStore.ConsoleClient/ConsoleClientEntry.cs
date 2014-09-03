@@ -24,15 +24,16 @@
         {
             var data = new TrollStoreData();
 
-            var xmlCountries = ReadCountriesDataFromXml();
-            UploadCountriesDataToCloud(xmlCountries, data);
+            //var xmlCountries = ReadCountriesDataFromXml();
+            //UploadCountriesDataToCloud(xmlCountries, data);
 
-            DownloadDataFromCloud(data);
+            //DownloadDataFromCloud(data);
 
-            ExtractDataFromZip();
-            UploadDataFromExcelToSql(data);
+            //ExtractDataFromZip();
+            //UploadDataFromExcelToSql(data);
 
-            //PdfParser.GeneratePdf();
+            PdfParser.GenerateProductInfoPdf(data);
+            PdfParser.GenerateSalesInfoPdf(data);
 
             //SqliteContext context = new SqliteContext();
             //ExtractExcelFromSQLite extractor = new ExtractExcelFromSQLite(context);
