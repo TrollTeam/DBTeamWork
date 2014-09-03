@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp, Version=4.0.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DBTeamWork-master\DBTeamWork-master\TrollStore\TrollStore.Reports\libs\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -51,11 +55,15 @@
     <Compile Include="ExcelParser.cs" />
     <Compile Include="ExtractZipFile.cs" />
     <Compile Include="JsonProductReporter.cs" />
+    <Compile Include="PDF Data\Helpers\Helpers.cs" />
+    <Compile Include="PDF Data\Helpers\PDFBuilder.cs" />
+    <Compile Include="PdfParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XmlReporter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="PDF Data\libs\itextsharp.dll.refresh" />
     <None Include="RawData\SalesReports.zip" />
   </ItemGroup>
   <ItemGroup>
@@ -73,6 +81,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="PDF Data\libs\itextsharp.dll" />
     <Content Include="RawData\countries.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

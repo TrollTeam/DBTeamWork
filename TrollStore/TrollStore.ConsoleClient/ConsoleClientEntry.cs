@@ -22,7 +22,8 @@
 
         public static void Main()
         {
-            var data = new TrollStoreData();
+            PdfParser.GeneratePdf();
+            //var data = new TrollStoreData();
 
             //var xmlCountries = ReadCountriesDataFromXml();
             //UploadCountriesDataToCloud(xmlCountries, data);
@@ -32,9 +33,9 @@
             //ExtractDataFromZip();
             //UploadDataFromExcelToSql(data);
 
-            SqliteContext context = new SqliteContext();
-            ExtractExcelFromSQLite extractor = new ExtractExcelFromSQLite(context);
-            extractor.ExctractToExcel(@"C:\Users\aniad_000\Documents\GitHub\DBTeamWork\ExcelFromSQLite\Products.xlsx");
+            //SqliteContext context = new SqliteContext();
+            //ExtractExcelFromSQLite extractor = new ExtractExcelFromSQLite(context);
+            //extractor.ExctractToExcel(@"C:\Users\aniad_000\Documents\GitHub\DBTeamWork\ExcelFromSQLite\Products.xlsx");
             
 
             //SqliteContext ctx = new SqliteContext();
