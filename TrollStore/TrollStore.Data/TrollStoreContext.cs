@@ -32,11 +32,7 @@
 
         public IDbSet<Sale> Sales { get; set; }
 
-       /// public IDbSet<SaleProduct> SaleProducts { get; set; }
-
         public IDbSet<Store> Stores { get; set; }
-
-       // public IDbSet<StoreProduct> StoreProducts { get; set; }
 
         public new IDbSet<T> Set<T>() where T : class
         {

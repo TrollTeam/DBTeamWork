@@ -93,11 +93,6 @@
             {
                 var type = typeof(GenericRepository<T>);
 
-                //if (typeOfModel.IsAssignableFrom(typeof(Computer)))
-                //{
-                //    type = typeof(ComputersRepository);
-                //}
-
                 this.repositories.Add(typeOfModel, Activator.CreateInstance(type, this.context));
             }
 

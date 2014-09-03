@@ -10,11 +10,6 @@
 
     public class Product
     {
-        public Product()
-        {
-            //this.Stores = new HashSet<Store>();
-        }
-
         [Key]
         public int ProductId { get; set; }
 
