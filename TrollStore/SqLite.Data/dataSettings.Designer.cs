@@ -25,7 +25,7 @@ namespace SqLite.Data {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLiteDatabase\\ProductsDatabase.sqlite; Version=3;")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLiteDatabase\\Products.sqlite; Version=3;")]
         public string SQLITE_URI {
             get {
                 return ((string)(this["SQLITE_URI"]));

@@ -21,29 +21,30 @@
         {
             var data = new TrollStoreData();
 
-            //SqliteContext ctx = new SqliteContext();
+            SqliteContext ctx = new SqliteContext();
 
-            //var entry = new SqliteProduct()
-            //{
-            //    ProductID = 131,
-            //    SoldPieces = 205,
-            //    StartDate = DateTime.Now,
-            //    EndDate = DateTime.Now
-            
-            //};
+            var entry = new SqliteProduct()
+            {
+                ProductID = 131,
+                SoldPieces = 205,
+                StartDate = DateTime.Now,
+                EndDate = DateTime.Now
 
-            //ctx.Products.Add(entry);
-            //ctx.SaveChanges();
+            };
+
+            ctx.Products.Add(entry);
+            var res = ctx.SaveChanges();
+            Console.WriteLine("PESHO " + res);
+
+            foreach (var item in ctx.Products.ToList())
+            {
+                Console.WriteLine(item.ProductID + " " + item.SoldPieces + " "+ item.StartDate);
+            }
 
 
-            //Console.WriteLine(ctx.Products.FirstOrDefault().SoldPieces);
 
-
-
-
-
-            UploadCountriesDataToCloud(data);
-            DownloadDataFromCloud(data);
+            //UploadCountriesDataToCloud(data);
+            //DownloadDataFromCloud(data);
 
             ////string filePathToZip = "..\\..\\..\\TrollStore.Reports\\RawData\\SalesReports.zip";
             //string extractFilePath = "..\\..\\..\\..\\ExcelReports";
