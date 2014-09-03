@@ -15,7 +15,7 @@
 
     public class ConsoleClientEntry
     {
-        private const string CountriesXmlFilepath = @"..\..\..\TrollStore.Reports\Raw Data\countries.xml";
+        private const string CountriesXmlFilepath = @"..\..\..\TrollStore.Reports\RawData\countries.xml";
 
         public static void Main()
         {
@@ -45,7 +45,7 @@
             UploadCountriesDataToCloud(data);
             DownloadDataFromCloud(data);
 
-            ////string filePathToZip = "..\\..\\..\\TrollStore.Reports\\Raw Data\\SalesReports.zip";
+            ////string filePathToZip = "..\\..\\..\\TrollStore.Reports\\RawData\\SalesReports.zip";
             //string extractFilePath = "..\\..\\..\\..\\ExcelReports";
             ////ExtractZipFile extractor = new ExtractZipFile(filePathToZip, extractFilePath);
             ////extractor.ExtractFromZIP();
