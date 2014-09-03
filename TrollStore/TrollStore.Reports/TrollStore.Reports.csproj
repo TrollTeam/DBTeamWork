@@ -48,7 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomerPurchaseReport.cs" />
-    <Compile Include="ExcelSalesParser.cs" />
+    <Compile Include="ExcelParser.cs" />
     <Compile Include="ExtractZipFile.cs" />
     <Compile Include="JsonProductReporter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

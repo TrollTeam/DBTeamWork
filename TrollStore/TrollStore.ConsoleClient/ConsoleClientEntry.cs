@@ -16,30 +16,41 @@
     public class ConsoleClientEntry
     {
         private const string CountriesXmlFilepath = @"..\..\..\TrollStore.Reports\RawData\countries.xml";
+        private const string FilePathCustomersToZip = "..\\..\\..\\TrollStore.Reports\\RawData\\Customers.zip";
+        private const string FilePathSalesReportsToZip = "..\\..\\..\\TrollStore.Reports\\RawData\\SalesReports.zip";
+        private const string ExtractFilePath = "..\\..\\..\\..\\ExcelReports";
 
         public static void Main()
         {
             var data = new TrollStoreData();
 
-            SqliteContext ctx = new SqliteContext();
+            var xmlCountries = ReadCountriesDataFromXml();
+            UploadCountriesDataToCloud(xmlCountries, data);
 
-            var entry = new SqliteProduct()
-            {
-                ProductID = 131,
-                SoldPieces = 205,
-                StartDate = DateTime.Now,
-                EndDate = DateTime.Now
+            DownloadDataFromCloud(data);
 
-            };
+            ExtractDataFromZip();
+            UploadDataFromExcelToSql(data);
 
-            ctx.Products.Add(entry);
-            var res = ctx.SaveChanges();
-            Console.WriteLine("PESHO " + res);
+            //SqliteContext ctx = new SqliteContext();
 
-            foreach (var item in ctx.Products.ToList())
-            {
-                Console.WriteLine(item.ProductID + " " + item.SoldPieces + " "+ item.StartDate);
-            }
+            //var entry = new SqliteProduct()
+            //{
+            //    ProductID = 131,
+            //    SoldPieces = 205,
+            //    StartDate = DateTime.Now,
+            //    EndDate = DateTime.Now
+
+            //};
+
+            //ctx.Products.Add(entry);
+            //var res = ctx.SaveChanges();
+            //Console.WriteLine("PESHO " + res);
+
+            //foreach (var item in ctx.Products.ToList())
+            //{
+            //    Console.WriteLine(item.ProductID + " " + item.SoldPieces + " "+ item.StartDate);
+            //}
 
 
 
@@ -75,11 +86,17 @@
 
         }
 
-        private static void UploadCountriesDataToCloud(TrollStoreData data)
+        private static ICollection<CountryFromXml> ReadCountriesDataFromXml()
         {
-            var mongoDbUploader = new MongoDbCloudConnector(data);
             XmlReporter<CountryFromXml> xmlReporter = new XmlReporter<CountryFromXml>(string.Empty, CountriesXmlFilepath);
             var xmlCountries = xmlReporter.ReadData().ToList();
+
+            return xmlCountries;
+        }
+
+        private static void UploadCountriesDataToCloud(ICollection<CountryFromXml> xmlCountries, TrollStoreData data)
+        {
+            var mongoDbUploader = new MongoDbCloudConnector(data);
 
             mongoDbUploader.UploadToCloud(xmlCountries);
         }
@@ -88,6 +105,25 @@
         {
             var mongoDbDownloader = new MongoDbCloudConnector(data);
             mongoDbDownloader.PopulateData();
+        }
+
+        private static void ExtractDataFromZip()
+        {
+            ExtractZipFile customersExtractor = new ExtractZipFile(FilePathCustomersToZip, ExtractFilePath);
+            customersExtractor.ExtractFromZIP();
+
+            ExtractZipFile salesExtractor = new ExtractZipFile(FilePathSalesReportsToZip, ExtractFilePath);
+            salesExtractor.ExtractFromZIP();
+        }
+
+        private static void UploadDataFromExcelToSql(TrollStoreData data)
+        {
+            ExcelParser excelCustomersParser = new ExcelParser((ExtractFilePath + "\\Customers\\Customers.xlsx"), data);
+            excelCustomersParser.GetCustomersDataFromExcel("Sheet1");
+
+            ExcelParser excelSalesParser = new ExcelParser((ExtractFilePath + "\\09-02-2014\\Sales.xlsx"), data);
+            excelSalesParser.GetSalesDataFromExcel("Sheet1");
+
         }
 
         private static void UpdateDatabase()

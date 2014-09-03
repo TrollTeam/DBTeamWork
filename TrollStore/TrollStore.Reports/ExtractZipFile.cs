@@ -4,7 +4,9 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
+    using System.Threading.Tasks;
     using System.IO.Compression;
+    using System.IO;
 
     public class ExtractZipFile
     {
@@ -19,7 +21,14 @@
 
         public void ExtractFromZIP()
         {
-            ZipFile.ExtractToDirectory(this.zipPath, this.extractPath);
+            try
+            {
+                ZipFile.ExtractToDirectory(this.zipPath, this.extractPath);
+            }
+            catch (IOException)
+            {
+                return;
+            }
         }
     }
 }
