@@ -21,6 +21,11 @@ namespace SqLite.Data
        {
            FileInfo file = new FileInfo(filePath);
            ExcelPackage package = new ExcelPackage(file);
+           if (package.Workbook.Worksheets.Count != 0)
+           {
+               return package;
+           }
+
            var workSheet = package.Workbook.Worksheets.Add("Products");
 
            workSheet.Cells["A1"].Value = "ProductId";
