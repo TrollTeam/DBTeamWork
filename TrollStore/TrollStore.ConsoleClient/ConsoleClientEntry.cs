@@ -12,6 +12,7 @@
     using MySqlTrollStoreModel;
     using TrollStore.Reports;
     using SqLite.Data;
+    using System.Data.SQLite;
 
     public class ConsoleClientEntry
     {
@@ -25,31 +26,56 @@
         {
             var data = new TrollStoreData();
 
-            //var xmlCountries = ReadCountriesDataFromXml();
-            //UploadCountriesDataToCloud(xmlCountries, data);
+            var xmlCountries = ReadCountriesDataFromXml();
+            UploadCountriesDataToCloud(xmlCountries, data);
 
-            //DownloadDataFromCloud(data);
+            DownloadDataFromCloud(data);
 
-            //ExtractDataFromZip();
-            //UploadDataFromExcelToSql(data);
+            ExtractDataFromZip();
+            UploadDataFromExcelToSql(data);
 
-            //PdfParser.GenerateSalesInfoPdf(data);
-            //PdfParser.GenerateProductInfoPdf(data);
-
-            //SqliteContext context = new SqliteContext();
-            //ExtractExcelFromSQLite extractor = new ExtractExcelFromSQLite(context, SqliteFilePath);
-            //extractor.ExctractToExcel(SqliteFilePath);
-
-
-            //SqliteContext ctx = new SqliteContext();
-
-            //foreach (var item in ctx.Products.ToList())
-            //{
-            //    Console.WriteLine(item.ProductID + " " + item.SoldPieces + " " + item.StartDate);
-            //}
-
+            PdfParser.GenerateSalesInfoPdf(data);
+            PdfParser.GenerateProductInfoPdf(data);
 
             ExtractDataToMySql(data);
+
+            SqliteContext context = new SqliteContext();
+            ExtractExcelFromSQLite extractor = new ExtractExcelFromSQLite(context, SqliteFilePath);
+            extractor.ExctractToExcel(SqliteFilePath);
+
+            ReadDataFromSqlLite();
+        }
+
+        private static void ReadDataFromSqlLite()
+        {
+            var connectionString = @"Data Source=..\..\Products.sqlite;Version=3;";
+            SQLiteConnection dbConnection = new SQLiteConnection(connectionString);
+            dbConnection.Open();
+            List<SqliteProduct> list = new List<SqliteProduct>();
+
+            using (dbConnection)
+            {
+                string query = @"SELECT * FROM Products";
+
+                SQLiteCommand cmd = new SQLiteCommand(query, dbConnection);
+                SQLiteDataReader reader = cmd.ExecuteReader();
+
+                using (reader)
+                {
+                    while (reader.Read())
+                    {
+                        var pr = new SqliteProduct()
+                        {
+                            ProductID = int.Parse(reader["ProductID"].ToString()),
+                            SoldPieces = int.Parse(reader["SoldPieces"].ToString()),
+                        };
+
+                        list.Add(pr);
+                    }
+                }
+            }
+
+
         }
 
 
