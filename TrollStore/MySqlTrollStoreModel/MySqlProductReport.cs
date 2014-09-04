@@ -14,8 +14,10 @@ namespace TrollStore.Reports
 
         public string Manufacturer{ get; set; }
 
-        public string Quantity { get; set; }
+        public int Quantity { get; set; }
 
-        public string Store { get; set; }
+        public MySqlProductReport()
+        {
+        }
     }
 }

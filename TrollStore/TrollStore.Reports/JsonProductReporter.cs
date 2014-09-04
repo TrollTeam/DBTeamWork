@@ -31,6 +31,7 @@ namespace TrollStore.Reports
 
             if (!Directory.Exists(PATH))
             {
+
                 throw new ArgumentException("The directory Json-Reports does not exist. Try to generate reports first.");
             }
 

@@ -36,49 +36,22 @@
             //PdfParser.GenerateSalesInfoPdf(data);
             //PdfParser.GenerateProductInfoPdf(data);
 
-            SqliteContext context = new SqliteContext();
-            ExtractExcelFromSQLite extractor = new ExtractExcelFromSQLite(context, SqliteFilePath);
-            extractor.ExctractToExcel(SqliteFilePath);
+            //SqliteContext context = new SqliteContext();
+            //ExtractExcelFromSQLite extractor = new ExtractExcelFromSQLite(context, SqliteFilePath);
+            //extractor.ExctractToExcel(SqliteFilePath);
 
 
-            SqliteContext ctx = new SqliteContext();
+            //SqliteContext ctx = new SqliteContext();
 
-            var entry = new SqliteProduct()
-            {
-                ProductID = 131,
-                SoldPieces = 205,
-                StartDate = DateTime.Now,
-                EndDate = DateTime.Now
-
-            };
-
-            ctx.Products.Add(entry);
-            var res = ctx.SaveChanges();
-            Console.WriteLine("PESHO " + res);
-
-            foreach (var item in ctx.Products.ToList())
-            {
-                Console.WriteLine(item.ProductID + " " + item.SoldPieces + " " + item.StartDate);
-            }
-
-
-          
-            //UpdateMySqlDatabase();
-            //using (var mysqlcontext = new MySqlTrollStoreModel.TrollStoreModel())
+            //foreach (var item in ctx.Products.ToList())
             //{
-            //    var reporter = new JsonProductReporter();
-            //    var fakedata = new List<MySqlProductReport>();
-            //    fakedata.Add(new MySqlProductReport() { Name = "ivan", Manufacturer = "bai ivan" });
-            //    reporter.GenerateReport(fakedata);
-            //    var products = reporter.ReadJsonData();
-            //    foreach (var p in products)
-            //    {
-            //        mysqlcontext.Add(p);
-            //    }
-
-            //    mysqlcontext.SaveChanges();
+            //    Console.WriteLine(item.ProductID + " " + item.SoldPieces + " " + item.StartDate);
             //}
+
+
+            ExtractDataToMySql(data);
         }
+
 
         private static ICollection<CountryFromXml> ReadCountriesDataFromXml()
         {
@@ -120,15 +93,42 @@
 
         }
 
+        private static void ExtractDataToMySql(TrollStoreData sqlDbContext)
+        {
+            UpdateMySqlDatabase();
+            using (var mysqlcontext = new MySqlTrollStoreModel.TrollStoreModel())
+            {
+                var reporter = new JsonProductReporter();
+
+                var productsFromSql = sqlDbContext.Products.All().Select(p =>
+                    new MySqlProductReport
+                    {
+                        ProductID = p.ProductId,
+                        Name = p.Name,
+                        Manufacturer = p.Manufacturer.Name,
+                        Quantity = p.Quantity,
+                    })
+                .ToList();
+
+                reporter.GenerateReport(productsFromSql);
+                var products = reporter.ReadJsonData();
+                foreach (var p in products)
+                {
+                    mysqlcontext.Add(p);
+                }
+
+                mysqlcontext.SaveChanges();
+            }
+        }
         private static void UpdateMySqlDatabase()
         {
             using (var context = new MySqlTrollStoreModel.TrollStoreModel())
             {
                 var schemaHandler = context.GetSchemaHandler();
-                EnsureDB(schemaHandler);
+                EnsureMySqlDatabase(schemaHandler);
             }
         }
-        private static void EnsureDB(ISchemaHandler schemaHandler)
+        private static void EnsureMySqlDatabase(ISchemaHandler schemaHandler)
         {
             string script = null;
             if (schemaHandler.DatabaseExists())

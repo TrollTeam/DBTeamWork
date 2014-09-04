@@ -38,7 +38,6 @@ namespace MySqlTrollStoreModel
                 Name = product.Name,
                 Manufacturer = product.Manufacturer,
                 Quantity = product.Quantity,
-                Store = product.Store,
 
             }).ToTable("ProductReports");
 
