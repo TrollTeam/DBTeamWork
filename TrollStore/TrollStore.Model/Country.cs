@@ -9,6 +9,8 @@
 
     public class Country
     {
+        private ICollection<Store> stores;
+
         public Country()
         {
             this.Stores = new HashSet<Store>();
@@ -23,6 +25,16 @@
 
         public string Currency { get; set; }
 
-        public virtual ICollection<Store> Stores { get; set; }
+        public virtual ICollection<Store> Stores
+        {
+            get
+            {
+                return this.stores;
+            }
+            set
+            {
+                this.stores = value;
+            }
+        }
     }
 }

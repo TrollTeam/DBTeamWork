@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="SQLITE_URI" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Data Source=.\SQLiteDatabase\Products.sqlite; Version=3;</Value>
+      <Value Profile="(Default)">Data Source=SQLiteDatabase\Products.sqlite; Version=3;</Value>
     </Setting>
   </Settings>
 </SettingsFile>

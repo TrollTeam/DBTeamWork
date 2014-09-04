@@ -10,10 +10,11 @@
 
     public class Customer
     {
+        private ICollection<Sale> purchases;
 
         public Customer()
         {
-            this.Purchases = new HashSet<Sale>();
+            this.purchases = new HashSet<Sale>();
         }
 
         [Key]
@@ -27,6 +28,16 @@
 
         public virtual Country Country { get; set; }
 
-        public virtual ICollection<Sale> Purchases { get; set; }
+        public virtual ICollection<Sale> Purchases
+        {
+            get
+            {
+                return this.purchases;
+            }
+            set
+            {
+                this.purchases = value;
+            }
+        }
     }
 }

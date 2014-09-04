@@ -10,10 +10,14 @@
 
     public class Store
     {
+        private ICollection<Product> products;
+
+        private ICollection<Sale> sales;
+
         public Store()
         {
-            this.Products = new HashSet<Product>();
-            this.Sales = new HashSet<Sale>();
+            this.products = new HashSet<Product>();
+            this.sales = new HashSet<Sale>();
         }
 
         public int StoreId { get; set; }
@@ -24,8 +28,28 @@
 
         public virtual Country Country { get; set; }
 
-        public virtual ICollection<Product> Products { get; set; }
+        public virtual ICollection<Product> Products
+        {
+            get
+            {
+                return this.products;
+            }
+            set
+            {
+                this.products = value;
+            }
+        }
 
-        public virtual ICollection<Sale> Sales { get; set; }
+        public virtual ICollection<Sale> Sales
+        {
+            get
+            {
+                return this.sales;
+            }
+            set
+            {
+                this.sales = value;
+            }
+        }
     }
 }

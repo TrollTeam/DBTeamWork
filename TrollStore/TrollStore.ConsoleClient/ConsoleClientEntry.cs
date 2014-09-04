@@ -16,9 +16,10 @@
     public class ConsoleClientEntry
     {
         private const string CountriesXmlFilepath = @"..\..\..\TrollStore.Reports\RawData\countries.xml";
-        private const string FilePathCustomersToZip = "..\\..\\..\\TrollStore.Reports\\RawData\\Customers.zip";
-        private const string FilePathSalesReportsToZip = "..\\..\\..\\TrollStore.Reports\\RawData\\SalesReports.zip";
-        private const string ExtractFilePath = "..\\..\\..\\..\\ExcelReports";
+        private const string FilePathCustomersToZip = @"..\..\..\TrollStore.Reports\RawData\Customers.zip";
+        private const string FilePathSalesReportsToZip = @"..\..\..\TrollStore.Reports\RawData\SalesReports.zip";
+        private const string ExtractFilePath = @"..\..\..\..\ExcelReports";
+        private const string SqliteFilePath = @"..\..\..\..\ExcelFromSQLite\Products.xlsx";
 
         public static void Main()
         {
@@ -32,49 +33,37 @@
             //ExtractDataFromZip();
             //UploadDataFromExcelToSql(data);
 
-            //PdfParser.GenerateProductInfoPdf(data);
             //PdfParser.GenerateSalesInfoPdf(data);
+            //PdfParser.GenerateProductInfoPdf(data);
 
             SqliteContext context = new SqliteContext();
-            ExtractExcelFromSQLite extractor = new ExtractExcelFromSQLite(context, "C:\\Users\\aniad_000\\Documents\\GitHub\\DBTeamWork\\ExcelFromSQLite\\Products.xlsx");
-            extractor.ExctractToExcel(@"C:\Users\aniad_000\Documents\GitHub\DBTeamWork\ExcelFromSQLite\Products.xlsx");
-            
-
-            //SqliteContext ctx = new SqliteContext();
-
-            //var entry = new SqliteProduct()
-            //{
-            //    ProductID = 131,
-            //    SoldPieces = 205,
-            //    StartDate = DateTime.Now,
-            //    EndDate = DateTime.Now
-
-            //};
-
-            //ctx.Products.Add(entry);
-            //var res = ctx.SaveChanges();
-            //Console.WriteLine("PESHO " + res);
-
-            //foreach (var item in ctx.Products.ToList())
-            //{
-            //    Console.WriteLine(item.ProductID + " " + item.SoldPieces + " "+ item.StartDate);
-            //}
+            ExtractExcelFromSQLite extractor = new ExtractExcelFromSQLite(context, SqliteFilePath);
+            extractor.ExctractToExcel(SqliteFilePath);
 
 
+            SqliteContext ctx = new SqliteContext();
 
-            //UploadCountriesDataToCloud(data);
-            //DownloadDataFromCloud(data);
+            var entry = new SqliteProduct()
+            {
+                ProductID = 131,
+                SoldPieces = 205,
+                StartDate = DateTime.Now,
+                EndDate = DateTime.Now
 
-            ////string filePathToZip = "..\\..\\..\\TrollStore.Reports\\RawData\\SalesReports.zip";
-            //string extractFilePath = "..\\..\\..\\..\\ExcelReports";
-            ////ExtractZipFile extractor = new ExtractZipFile(filePathToZip, extractFilePath);
-            ////extractor.ExtractFromZIP();
+            };
 
-            //ExcelSalesParser excelParser = new ExcelSalesParser((extractFilePath + "\\09-02-2014\\Sales.xlsx"), data);
-            //excelParser.GetDataFromExcel("Sheet1");
+            ctx.Products.Add(entry);
+            var res = ctx.SaveChanges();
+            Console.WriteLine("PESHO " + res);
+
+            foreach (var item in ctx.Products.ToList())
+            {
+                Console.WriteLine(item.ProductID + " " + item.SoldPieces + " " + item.StartDate);
+            }
 
 
-            //UpdateDatabase();
+          
+            //UpdateMySqlDatabase();
             //using (var mysqlcontext = new MySqlTrollStoreModel.TrollStoreModel())
             //{
             //    var reporter = new JsonProductReporter();
@@ -131,7 +120,7 @@
 
         }
 
-        private static void UpdateDatabase()
+        private static void UpdateMySqlDatabase()
         {
             using (var context = new MySqlTrollStoreModel.TrollStoreModel())
             {

@@ -16,7 +16,7 @@ namespace SqLite.Data
        private SqliteContext context;
        private OleDbConnection dbConn;
 
-       public ExtractExcelFromSQLite(SqliteContext context,string filePath)
+       public ExtractExcelFromSQLite(SqliteContext context, string filePath)
        {
            this.context=context;
 
@@ -57,7 +57,6 @@ namespace SqLite.Data
                dataAdapter.Fill(dataSet);
            }
            package.Save();
-
        }
     }
 }

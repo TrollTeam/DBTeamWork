@@ -10,9 +10,11 @@
 
     public class Manufacturer
     {
+        private ICollection<Product> products;
+
         public Manufacturer()
         {
-            this.Products = new HashSet<Product>();
+            this.products = new HashSet<Product>();
         }
 
         [Key]
@@ -24,6 +26,16 @@
 
         public virtual Country Country { get; set; }
 
-        public virtual ICollection<Product> Products { get; set; }
+        public virtual ICollection<Product> Products
+        {
+            get
+            {
+                return this.products;
+            }
+            set
+            {
+                this.products = value;
+            }
+        }
     }
 }
