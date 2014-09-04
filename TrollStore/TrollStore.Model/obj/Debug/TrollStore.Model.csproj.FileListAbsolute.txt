@@ -8,3 +8,13 @@ C:\Users\Toshiba\Source\Repos\DBTeamWork\TrollStore\TrollStore.Model\bin\Debug\E
 C:\Users\Toshiba\Source\Repos\DBTeamWork\TrollStore\TrollStore.Model\obj\Debug\TrollStore.Model.csprojResolveAssemblyReference.cache
 C:\Users\Toshiba\Source\Repos\DBTeamWork\TrollStore\TrollStore.Model\obj\Debug\TrollStore.Model.dll
 C:\Users\Toshiba\Source\Repos\DBTeamWork\TrollStore\TrollStore.Model\obj\Debug\TrollStore.Model.pdb
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Model\bin\Debug\TrollStore.Model.dll.config
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Model\bin\Debug\TrollStore.Model.dll
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Model\bin\Debug\TrollStore.Model.pdb
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Model\bin\Debug\EntityFramework.dll
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Model\bin\Debug\EntityFramework.xml
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Model\obj\Debug\TrollStore.Model.csprojResolveAssemblyReference.cache
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Model\obj\Debug\TrollStore.Model.dll
+C:\Users\aniad_000\Documents\GitHub\DBTeamWork\TrollStore\TrollStore.Model\obj\Debug\TrollStore.Model.pdb

@@ -1,21 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.OleDb;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OfficeOpenXml;
+using TrollStore.Model;
 
 namespace SqLite.Data
 {
    public class ExtractExcelFromSQLite
     {
        private SqliteContext context;
+       private OleDbConnection dbConn;
 
-       public ExtractExcelFromSQLite(SqliteContext context)
+       public ExtractExcelFromSQLite(SqliteContext context,string filePath)
        {
            this.context=context;
+
+            this.dbConn = new OleDbConnection(GenerateConnectionString(filePath));
        }
+         public string GenerateConnectionString(string filePath)
+        {
+            return "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + filePath + "; Extended Properties=\"Excel 12.0 Xml;HDR=YES\";";
+        }
+
 
        private ExcelPackage CreateExcel(string filePath)
        {
@@ -28,11 +39,6 @@ namespace SqLite.Data
 
            var workSheet = package.Workbook.Worksheets.Add("Products");
 
-           workSheet.Cells["A1"].Value = "ProductId";
-           workSheet.Cells["B1"].Value = "SoldPieces";
-           workSheet.Cells["C1"].Value = "StartData";
-           workSheet.Cells["D1"].Value = "EndDate";
-
            package.Save();
 
            return package;
@@ -41,30 +47,15 @@ namespace SqLite.Data
        public void ExctractToExcel(string filePath)
        {
            var package = CreateExcel(filePath);
-           var workSheet = package.Workbook.Worksheets[1];
-
-           var sqliteProducts =
-               from products in context.Products
-               select new
-               {
-                   ProductId = products.ProductID,
-                   SoldPieces = products.SoldPieces,
-                   StartDate = products.StartDate,
-                   EndDate = products.EndDate
-               };
-
-           int count = 2;
-
-           foreach (var product in sqliteProducts)
+           
+           dbConn.Open();
+           using(dbConn)
            {
-               workSheet.Cells["A" + count].Value = product.ProductId;
-               workSheet.Cells["B" + count].Value = product.SoldPieces;
-               workSheet.Cells["C" + count].Value = product.StartDate;
-               workSheet.Cells["D" + count].Value = product.EndDate;
-               count++;
-
+               var query = "select * from Products";
+               var dataAdapter = new OleDbDataAdapter(query, dbConn);
+               var dataSet=new DataSet();
+               dataAdapter.Fill(dataSet);
            }
-
            package.Save();
 
        }

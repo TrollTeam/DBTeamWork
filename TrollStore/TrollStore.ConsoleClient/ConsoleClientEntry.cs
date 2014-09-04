@@ -32,12 +32,12 @@
             //ExtractDataFromZip();
             //UploadDataFromExcelToSql(data);
 
-            PdfParser.GenerateProductInfoPdf(data);
-            PdfParser.GenerateSalesInfoPdf(data);
+            //PdfParser.GenerateProductInfoPdf(data);
+            //PdfParser.GenerateSalesInfoPdf(data);
 
-            //SqliteContext context = new SqliteContext();
-            //ExtractExcelFromSQLite extractor = new ExtractExcelFromSQLite(context);
-            //extractor.ExctractToExcel(@"C:\Users\aniad_000\Documents\GitHub\DBTeamWork\ExcelFromSQLite\Products.xlsx");
+            SqliteContext context = new SqliteContext();
+            ExtractExcelFromSQLite extractor = new ExtractExcelFromSQLite(context, "C:\\Users\\aniad_000\\Documents\\GitHub\\DBTeamWork\\ExcelFromSQLite\\Products.xlsx");
+            extractor.ExctractToExcel(@"C:\Users\aniad_000\Documents\GitHub\DBTeamWork\ExcelFromSQLite\Products.xlsx");
             
 
             //SqliteContext ctx = new SqliteContext();

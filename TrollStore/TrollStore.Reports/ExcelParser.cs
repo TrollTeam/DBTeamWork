@@ -35,7 +35,7 @@
 
         public string GenerateConnectionString(string filePath)
         {
-            return "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=.\\" + filePath + "; Extended Properties=\"Excel 12.0 Xml;HDR=YES\";";
+            return "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + filePath + "; Extended Properties=\"Excel 12.0 Xml;HDR=YES\";";
         }
 
         public void GetSalesDataFromExcel(string sheetName)
